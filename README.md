@@ -16,7 +16,7 @@ This project demonstrates basic firewall configuration and traffic filtering usi
 
 ## 🛠️ Technologies
 - Kali Linux (UFW)
-- Windows Firewall (GUI)
+- Windows Firewall (CLI, GUI)
 - Python 3
 - telnet, ssh
 
