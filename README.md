@@ -35,4 +35,4 @@ See `linux/screenshots/` and `windows/screenshots/` for rule setup and test resu
 See `docs/interview_questions.md` for key concepts and sample answers.
 
 ## 🐍 Python Automation
-See `linux/firewall_setup.py` for automated rule configuration.
+See `linux/python/firewall_setup.py` for automated rule configuration.
