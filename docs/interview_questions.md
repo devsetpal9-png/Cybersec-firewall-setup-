@@ -5,49 +5,48 @@ This document covers key firewall concepts and sample answers to common cybersec
 ---
 
 ### 1. **What is a firewall?**
-A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predetermined rules. It acts as a barrier between trusted and untrusted networks.
+A firewall is a network security device or software that monitors and controls incoming and outgoing traffic based on predefined rules. It acts as a barrier between trusted and untrusted networks.
 
 ---
 
-### 2. **How does a firewall work?**
-Firewalls inspect packets and apply rules to determine whether to allow or block traffic. They can filter based on IP address, port, protocol, or application-level data.
+### 2. **Difference between stateful and stateless firewalls?**
+- **Stateful firewalls** track the state of active connections and make decisions based on context.
+- **Stateless firewalls** treat each packet independently, without regard to connection state.
 
 ---
 
-### 3. **What is the difference between stateful and stateless firewalls?**
-- **Stateful:** Tracks the state of active connections and makes decisions based on context.
-- **Stateless:** Evaluates each packet independently without regard to connection state.
+### 3. **What are inbound and outbound rules?**
+- **Inbound rules** control traffic coming into the system.
+- **Outbound rules** control traffic leaving the system.
+These rules help define which ports and services are accessible in each direction.
 
 ---
 
-### 4. **Where are firewalls used?**
-Firewalls are used in:
-- Personal computers
-- Enterprise networks
-- Cloud environments
-- Routers and gateways
+### 4. **How does UFW simplify firewall management?**
+UFW (Uncomplicated Firewall) provides a simplified command-line interface for managing iptables on Linux. It abstracts complex rule syntax into easy commands like `ufw allow 22`.
 
 ---
 
-### 5. **How does UFW simplify firewall management?**
-UFW (Uncomplicated Firewall) provides a user-friendly interface for managing iptables rules on Linux. It uses simple commands like `ufw allow 22` to configure rules.
+### 5. **Why block port 23 (Telnet)?**
+Telnet transmits data in plaintext, making it vulnerable to interception and exploitation. Blocking port 23 helps prevent insecure remote access and enforces better security practices.
 
 ---
 
-### 6. **What are common firewall rules?**
-- Allow or deny traffic on specific ports
-- Restrict access by IP address
-- Limit protocols (TCP/UDP)
-- Log and monitor traffic
+### 6. **What are common firewall mistakes?**
+- Leaving unnecessary ports open
+- Misconfiguring rules (e.g., overly permissive)
+- Forgetting to test rule behavior
+- Not logging or monitoring traffic
+- Ignoring outbound traffic filtering
 
 ---
 
-### 7. **What is network traffic filtering?**
-It’s the process of controlling data flow based on rules that define which packets are allowed or blocked. It helps prevent unauthorized access and data exfiltration.
+### 7. **How does a firewall improve network security?**
+Firewalls enforce access control, prevent unauthorized connections, and reduce attack surface by filtering traffic. They’re essential for segmenting networks and protecting sensitive systems.
 
 ---
 
 ### 8. **What is NAT in firewalls?**
-Network Address Translation (NAT) allows multiple devices on a private network to share a single public IP. Firewalls often use NAT to route traffic securely between networks.
+Network Address Translation (NAT) allows multiple devices on a private network to share a single public IP. Firewalls often use NAT to route traffic securely and hide internal IPs.
 
 ---
