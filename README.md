@@ -18,7 +18,7 @@ This project demonstrates basic firewall configuration and traffic filtering usi
 - Kali Linux (UFW)
 - Windows Firewall (GUI)
 - Python 3
-- nmap, telnet, ssh
+- telnet, ssh
 
 ## 📁 Structure
 - `linux/`: UFW commands, Python automation, screenshots
